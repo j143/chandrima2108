@@ -1,51 +1,125 @@
-/* Custom CSS for consistent styling across the portfolio */
+/* Design tokens for consistent visual language */
+:root {
+  --brand-primary: #5e72e4;
+  --brand-success: #22a06b;
+  --brand-info: #1f82c0;
+  --surface-muted: #f8f9fb;
+  --text-strong: #222b45;
+  --text-muted: #4c566a;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --shadow-sm: 0 4px 12px rgba(17, 24, 39, 0.08);
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+}
+
+/* Typography consistency */
+body {
+  color: var(--text-strong);
+  line-height: 1.7;
+}
+
+h2, h3, h4 {
+  color: var(--text-strong);
+  letter-spacing: -0.01em;
+}
+
+p, li {
+  color: var(--text-muted);
+}
 
 /* Project feature box styling */
 .project-feature-box {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin: 1rem 0;
+  background: var(--surface-muted);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(94, 114, 228, 0.14);
+  box-shadow: var(--shadow-sm);
+  margin: var(--space-2) 0;
 }
 
 /* Icon colors for consistent branding */
 .icon-primary {
-  color: #5e72e4;
+  color: var(--brand-primary);
 }
 
 .icon-success {
-  color: #4CAF50;
+  color: var(--brand-success);
 }
 
 .icon-info {
-  color: #17a2b8;
+  color: var(--brand-info);
 }
 
-/* Ensure buttons have consistent spacing */
+/* Interaction consistency for links and buttons */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--brand-primary);
+}
+
 .btn {
-  margin-right: 0.5rem;
+  margin-right: var(--space-1);
+  margin-bottom: var(--space-1);
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
-/* Hero tagline visibility and responsive scaling */
-.page-intro .lead {
-  opacity: 0.95;
-  color: rgba(255,255,255,0.95);
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
-@media (max-width: 600px) {
-  .page-title { font-size: 1.6rem; }
-  .page-intro .lead { font-size: 1.05rem; }
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid rgba(94, 114, 228, 0.35);
+  outline-offset: 2px;
+}
+
+/* Hero readability and section rhythm */
+.page__hero {
+  background-image: linear-gradient(135deg, rgba(45, 58, 122, 0.9), rgba(94, 114, 228, 0.85));
+}
+
+.page-intro .lead {
+  opacity: 0.98;
+  color: rgba(255, 255, 255, 0.98);
+}
+
+hr {
+  border-color: rgba(94, 114, 228, 0.2);
 }
 
 /* Avatar styling */
-.site-avatar img, .author-image img {
+.site-avatar img,
+.author-image img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  border: 3px solid rgba(94, 114, 228, 0.22);
 }
 
 /* Active navigation indicator */
-.primary-nav .current > a, .primary-nav .active > a {
-  border-bottom: 2px solid #5e72e4;
-  color: #5e72e4;
+.primary-nav .current > a,
+.primary-nav .active > a {
+  border-bottom: 2px solid var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  .page-intro .lead {
+    font-size: 1.05rem;
+  }
 }

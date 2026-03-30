@@ -35,7 +35,7 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/chandrima-kachhwah/" # Add LinkedIn URL when available
     - label: "TopMate"
-      icon: "fab fa-fw fa-phone"
+      icon: "fas fa-fw fa-link"
       url: "https://topmate.io/chandrimakachhwah"
     
 # SEO Settings

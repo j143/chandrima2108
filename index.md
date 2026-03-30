@@ -17,13 +17,13 @@ header:
 
 I'm Chandrima, a passionate VLSI Analog Design Engineer with B.Tech and M.Tech qualifications. This site showcases my technical projects and shares insights from my journey in analog circuit design and technology.
 
-### What You'll Find Here
+### Explore This Site
 
 - **[Projects](/projects/)** - Interactive tools and circuit simulations I've built
 - **[Blog](/blog/)** - Technical insights, tutorials, and thoughts on VLSI design
 - **[About](/about/)** - My background, experience, and interests
 
-### Recent Projects
+### Featured Project
 
 <div class="feature__wrapper">
   <div class="feature__item">
@@ -48,6 +48,6 @@ I'm Chandrima, a passionate VLSI Analog Design Engineer with B.Tech and M.Tech q
 
 ---
 
-*Interested in collaboration or have questions about VLSI analog design? Feel free to reach out through any of the social links in my profile!* 
+*Interested in collaboration, mentorship, or VLSI analog design discussions? Reach out via LinkedIn, GitHub, or TopMate from the profile links.*
 
 ---
