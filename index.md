@@ -2,9 +2,10 @@
 layout: home
 author_profile: true
 excerpt: "VLSI Analog Design Engineer | Showcasing projects and sharing insights in circuit design and technology"
-title: "Chandrima Kachhwah - VLSI Analog Design Engineer Portfolio"
+title: "VLSI Analog Design Portfolio"
 header:
-  overlay_color: "#5e72e4"
+  overlay_image: "/assets/images/site-logo.svg"
+  overlay_color: "#2e3a78"
   overlay_filter: "0.5"
   actions:
     - label: "View Projects"

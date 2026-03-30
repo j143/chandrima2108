@@ -11,8 +11,26 @@
   {%- endif -%}
   
   <!-- Mermaid.js CDN for diagram rendering -->
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js" defer></script>
   <script>
-    mermaid.initialize({ startOnLoad: true });
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+
+      document.querySelectorAll("pre code.language-mermaid").forEach(function (codeBlock) {
+        var pre = codeBlock.closest("pre");
+        if (!pre) return;
+        var mermaidDiv = document.createElement("div");
+        mermaidDiv.className = "mermaid";
+        mermaidDiv.textContent = codeBlock.textContent || "";
+        pre.replaceWith(mermaidDiv);
+      });
+
+      mermaid.initialize({
+        startOnLoad: false,
+        securityLevel: "strict",
+        theme: "default"
+      });
+      mermaid.run({ querySelector: ".mermaid" });
+    });
   </script>
 </head>

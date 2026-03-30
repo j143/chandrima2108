@@ -4,7 +4,8 @@ title: "Projects - Interactive Circuit Simulators and VLSI Tools"
 permalink: /projects/
 author_profile: true
 header:
-  overlay_color: "#5e72e4"
+  overlay_image: "/assets/images/site-logo.svg"
+  overlay_color: "#2e3a78"
   overlay_filter: "0.5"
 ---
 

@@ -25,8 +25,23 @@ h2, h3, h4 {
   letter-spacing: -0.01em;
 }
 
-p, li {
+.page__content p,
+.page__content li,
+.archive__item-excerpt {
   color: var(--text-muted);
+}
+
+.author__urls a {
+  color: var(--text-strong);
+}
+
+.author__urls a:hover {
+  color: var(--brand-primary);
+}
+
+.author__urls i,
+.social-icons i {
+  color: var(--brand-primary);
 }
 
 /* Project feature box styling */
